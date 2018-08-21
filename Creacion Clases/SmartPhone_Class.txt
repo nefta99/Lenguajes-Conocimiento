@@ -1,0 +1,28 @@
+Private pMarca As String
+Private pModelo As String
+Private pMemoria As String
+
+'Definimos las propiedades marca
+Public Property Get Marca() As String
+    Marca = pMarca
+End Property
+Public Property Let Marca(valor As String)
+    pMarca = valor
+End Property
+
+'Definimos las propiedades de Modelo
+Public Property Get Modelo() As String
+    Modelo = pModelo
+End Property
+Public Property Let Modelo(valor As String)
+    pModelo = valor
+End Property
+
+'Definimos la propiedad memoria
+Public Property Get Memoria() As String
+    Memoria = pMemoria
+End Property
+
+Public Property Let Memoria(valor As String)
+    pMemoria = valor
+End Property

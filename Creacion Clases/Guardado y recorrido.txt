@@ -1,0 +1,26 @@
+'Creamos una lista de objetos de collection
+    Dim tiposCelulares As New Collection
+    'Instanciamos la clase SmartPhone_Class
+    Dim nokia As New SmartPhone_Class
+    'Definimos tipos
+    nokia.Marca = "Nokia"
+    nokia.Memoria = "2 gb Ram"
+    nokia.Modelo = "KJKLTSP"
+    'Agregos el objeto a la coleccion de lista
+    tiposCelulares.Add nokia
+    
+    'Segunda clase objeto
+    Dim samsumg As New SmartPhone_Class
+    samsumg.Marca = "SamgSumg"
+    samsumg.Memoria = "9GB RAM"
+    samsumg.Modelo = "KTLO9897"
+    'Agregos el objeto a la coleccion de lista
+    tiposCelulares.Add samsumg
+    
+    'Definimos nuevo objeto para poder recorrer en el for each
+    Dim recorrido As New SmartPhone_Class
+    
+    'Recorremos el objeto si necesitamos sacar los datos
+    For Each recorrido In tiposCelulares
+        Debug.Print recorrido.Marca
+    Next recorrido
